@@ -1,0 +1,1 @@
+This directory contains scripts that make the Techium web page responsive.
