@@ -41,18 +41,12 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a[herf] {
-    color: #161616;
-    text-decoration: none;
-}
-
 a[href] {
     color: #161616;
     text-decoration: none;
 }
 
 a[href]:visited {
-    color: #161616;
     font-style: italic;
 }
 
@@ -64,7 +58,7 @@ a[href]:active {
     background-color: var(--color-light-grey);
 }
 
-.visually-hidden  {
+.visually-hidden {
     display: none;
 }
 
@@ -76,30 +70,213 @@ a[href]:active {
     text-align: var(--section-header-align);
 }
 
+.section-title {
+    color: var(--section-title-color);
+    margin: var(--section-title-margin);
+}
+
 .section-tagline {
-    margin-top: 0;
-    margin-bottom: 2rem;
-    font-family: var(--font-family-base);
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-bold);
-    line-height: var(--line-height-small);
     text-transform: var(--section-tagline-transform);
 }
 
-.section-title {
-    margin: var(--section-title-margin);
-    color: var(--section-title-color);
-    font-size: var(--font-size-x-large);
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.section-title + * {
-    margin-top: 4rem;
+.header {
+    padding: 20px 0;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
 }
 
-.section-title + * + * {
-    margin-top: 4rem;
+.header-logo img {
+    display: block;
 }
 
-.section-body + * {
-    margin-top: 4rem;
+.navbar-menu {
+    float: right;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-hero {
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.section-body {
+    margin-top: 20px;
+}
+
+.section-inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: var(--font-size-medium);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-1-3 {
+    width: 33.3333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.col-1-2 {
+    width: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.card-services {
+    background-color: var(--color-light-grey);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card-title {
+    font-size: var(--font-size-large);
+    margin: 0 0 10px;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: var(--color-dark-grey);
+}
+
+.card-work {
+    background-color: var(--color-light-grey);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+}
+
+.card-inner {
+    padding: 20px;
+}
+
+.card-blog {
+    background-color: var(--color-light-grey);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-category {
+    font-size: var(--font-size-small);
+    margin: 0 0 10px;
+}
+
+.card-blog h3 a {
+    color: var(--color-dark-grey);
+    text-decoration: none;
+}
+
+.card-quote {
+    font-size: var(--font-size-small);
+    color: var(--color-dark-grey);
+}
+
+.card-avatar {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.footer-logo img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.footer-address {
+    margin: 0 0 20px;
+}
+
+.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-item {
+    margin: 0 10px;
+}
+
+.social-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav-item {
+    margin: 0 10px;
+}
+
+.footer-nav-link {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-size-small);
 }
